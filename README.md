@@ -4,7 +4,6 @@
 [![API: POSIX Threads](https://img.shields.io/badge/API-Pthreads-green.svg)](https://pubs.opengroup.org/onlinepubs/9699919799/)
 [![API: OpenMP](https://img.shields.io/badge/API-OpenMP-orange.svg)](https://www.openmp.org/)
 [![API: NVIDIA CUDA](https://img.shields.io/badge/API-CUDA_12.0-76B900.svg)](https://developer.nvidia.com/cuda-toolkit)
-[![Course: Parallel Programming](https://img.shields.io/badge/AUEB-Parallel_Programming_2025--26-red.svg)](https://www.dept.aueb.gr/cs)
 
 ## Overview
 
