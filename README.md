@@ -86,32 +86,3 @@ $$\int_{a}^{b} f(x) dx \approx \frac{h}{2} \left[ f(a) + f(b) + 2 \sum_{i=1}^{n-
    ```
 4. Πλοηγηθείτε στον φάκελο του project και εκτελέστε τις παρακάτω εντολές κανονικά.
 
-### Μεταγλώττιση (Compile) και Εκτέλεση (Run)
-
-#### 1. POSIX Threads (Pthreads)
-```bash
-# Μεταγλώττιση της υλοποίησης Pthreads (Χωρίς optimization flags βάσει της εκφώνησης)
-gcc -Wall -pthread 1_Pthreads/src/partA_static_nolocks.c -o pthreads_sim -lm
-
-# Εκτέλεση προγράμματος
-./pthreads_sim
-```
-
-#### 2. OpenMP
-```bash
-# Μεταγλώττιση της υλοποίησης OpenMP
-gcc -Wall -fopenmp 2_OpenMP/src/integration_openmp_schedules.c -o openmp_sim -lm
-
-# Ορισμός πλήθους νημάτων και εκτέλεση
-export OMP_NUM_THREADS=8
-./openmp_sim
-```
-
-#### 3. NVIDIA CUDA
-```bash
-# Μεταγλώττιση του CUDA Kernel χρησιμοποιώντας nvcc
-nvcc -O2 3_CUDA/src/integration_cuda.cu -o cuda_sim
-
-# Εκτέλεση της προσομοίωσης στην GPU
-./cuda_sim
-```
