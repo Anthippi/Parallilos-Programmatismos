@@ -86,33 +86,3 @@ All CPU experiments (Pthreads and OpenMP) on Windows were executed via **MSYS2**
    pacman -S mingw-w64-ucrt-x86_64-gcc
    ```
 4. Navigate to the project folder and execute the compilation commands below as usual.
-
-### Compiling and Running
-
-#### 1. POSIX Threads (Pthreads)
-```bash
-# Compile Pthreads implementation (No optimization flags as per assignment requirements)
-gcc -Wall -pthread 1_Pthreads/src/partA_static_nolocks.c -o pthreads_sim -lm
-
-# Run executable
-./pthreads_sim
-```
-
-#### 2. OpenMP
-```bash
-# Compile OpenMP implementation
-gcc -Wall -fopenmp 2_OpenMP/src/integration_openmp_schedules.c -o openmp_sim -lm
-
-# Set number of threads and run
-export OMP_NUM_THREADS=8
-./openmp_sim
-```
-
-#### 3. NVIDIA CUDA
-```bash
-# Compile CUDA Kernel using nvcc
-nvcc -O2 3_CUDA/src/integration_cuda.cu -o cuda_sim
-
-# Run GPU simulation
-./cuda_sim
-```
