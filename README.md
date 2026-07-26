@@ -75,7 +75,16 @@ $$\int_{a}^{b} f(x) dx \approx \frac{h}{2} \left[ f(a) + f(b) + 2 \sum_{i=1}^{n-
 ### Προαπαιτούμενα
 * **Μεταγλωττιστής C/C++:** `gcc` / `g++` (v14+) με υποστήριξη POSIX threads (`-pthread`) και OpenMP (`-fopenmp`).
 * **CUDA Toolkit:** NVIDIA CUDA Toolkit 12.x (`nvcc`).
-* **Περιβάλλον:** Linux ή Windows (Συνιστάται το περιβάλλον MSYS2 MinGW-w64).
+
+### Ειδικά για Windows (MSYS2 / UCRT64)
+Όλα τα πειράματα CPU (Pthreads και OpenMP) σε περιβάλλον Windows εκτελέστηκαν μέσω του **MSYS2**. Για να μεταγλωττίσετε και να τρέξετε τον κώδικα:
+1. Εγκαταστήστε το [MSYS2](https://www.msys2.org/).
+2. Ανοίξτε το τερματικό **MSYS2 UCRT64** (ή MinGW64).
+3. Βεβαιωθείτε ότι έχετε εγκαταστήσει τον μεταγλωττιστή GCC εκτελώντας:
+   ```bash
+   pacman -S mingw-w64-ucrt-x86_64-gcc
+   ```
+4. Πλοηγηθείτε στον φάκελο του project και εκτελέστε τις παρακάτω εντολές κανονικά.
 
 ### Μεταγλώττιση (Compile) και Εκτέλεση (Run)
 
