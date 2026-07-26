@@ -1,4 +1,4 @@
-# Παράλληλη Αριθμητική Ολοκλήρωση: Pthreads, OpenMP & CUDA  [![English](https://img.shields.io/badge/English-orange.svg?style=for-the-badge)](README.en.md)
+# Παράλληλη Αριθμητική Ολοκλήρωση: Pthreads, OpenMP & CUDA [![Static Badge](https://img.shields.io/badge/English-orange)](README.en.md)
 
 [![Language: C/C++](https://img.shields.io/badge/Language-C%2FC%2B%2B-blue.svg)](https://en.cppreference.com/)
 [![API: POSIX Threads](https://img.shields.io/badge/API-Pthreads-green.svg)](https://pubs.opengroup.org/onlinepubs/9699919799/)
