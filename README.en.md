@@ -76,7 +76,16 @@ Experiments were conducted on **AMD Ryzen AI 7 350** (8 Cores / 16 Processors) w
 ### Prerequisites
 - **C/C++ Compiler**: `gcc` / `g++` (v14+) with POSIX threads (`-pthread`) and OpenMP (`-fopenmp`) support.
 - **CUDA Toolkit**: NVIDIA CUDA Toolkit 12.x (`nvcc`).
-- **Environment**: Linux or Windows (MSYS2 MinGW-w64 environment recommended).
+
+### Windows-Specific Instructions (MSYS2 / UCRT64)
+All CPU experiments (Pthreads and OpenMP) on Windows were executed via **MSYS2**. To compile and run the code:
+1. Install [MSYS2](https://www.msys2.org/).
+2. Open the **MSYS2 UCRT64** (or MinGW64) terminal.
+3. Ensure the GCC compiler is installed by running:
+   ```bash
+   pacman -S mingw-w64-ucrt-x86_64-gcc
+   ```
+4. Navigate to the project folder and execute the compilation commands below as usual.
 
 ### Compiling and Running
 
