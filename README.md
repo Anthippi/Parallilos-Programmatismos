@@ -86,3 +86,20 @@ $$\int_{a}^{b} f(x) dx \approx \frac{h}{2} \left[ f(a) + f(b) + 2 \sum_{i=1}^{n-
    ```
 4. Πλοηγηθείτε στον φάκελο του project και εκτελέστε τις παρακάτω εντολές κανονικά.
 
+### Παραδείγματα Μεταγλώττισης (Compilation)
+
+**Για τα POSIX Threads (Pthreads):**
+```bash
+gcc -pthread pthreads/integration.c -o pthreads_run -lm
+./pthreads_run
+```
+**Για το OpenMP:**
+```bash
+gcc -fopenmp openmp/integration.c -o openmp_run -lm
+./openmp_run
+```
+**Για την NVIDIA CUDA:**
+```bash
+nvcc cuda/integration.cu -o cuda_run
+./cuda_run
+```
