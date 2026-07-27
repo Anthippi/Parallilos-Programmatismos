@@ -86,3 +86,23 @@ All CPU experiments (Pthreads and OpenMP) on Windows were executed via **MSYS2**
    pacman -S mingw-w64-ucrt-x86_64-gcc
    ```
 4. Navigate to the project folder and execute the compilation commands below as usual.
+
+### Compilation Examples
+
+**For POSIX Threads (Pthreads):**
+```bash
+gcc -pthread pthreads/integration.c -o pthreads_run -lm
+./pthreads_run
+```
+**For OpenMP:**
+
+```bash
+gcc -fopenmp openmp/integration.c -o openmp_run -lm
+./openmp_run
+```
+**For NVIDIA CUDA:**
+
+```bash
+nvcc cuda/integration.cu -o cuda_run
+./cuda_run
+``` 
